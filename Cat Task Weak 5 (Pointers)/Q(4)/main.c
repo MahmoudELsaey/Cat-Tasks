@@ -1,25 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define ele 4 //we can change the size of the array.
+
 int main()
 {
-    int arr [4] = {1,2,3,4};
-    printf("max value = %d", BS(arr));
+    int arr [] = {20,10,500,1};
+    BS(arr);
+
     return 0;
 }
 
-int BS (int arr [4])
-{
-    int max =arr[0];
-    printf("%d \n", max);
 
-    for (int i= 1; i<= 3; i++)
+
+int BS (int arr [])
+{
+    for (int j=0; j<ele; j++)
     {
-        if (max < arr[i])
+        for (int i=0; i<ele; i++)
         {
-           max = arr[i];
+            if (arr[j]>arr[j+i])
+            {
+                int num = arr[j];
+                arr[j]=arr[j+i];
+                arr[j+i]= num;
+            }
         }
     }
-    return max;
 
+
+    //printing the final array
+    for (int n=0; n<ele; n++)
+    {
+        printf("%d\n",arr[n]);
+    }
 }
