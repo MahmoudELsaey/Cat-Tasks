@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1688916236 source:c:\users\mahmo\desktop\cooding c\q(3) simple calculator\main.c
+	<stdio.h>
+	<stdlib.h>
+

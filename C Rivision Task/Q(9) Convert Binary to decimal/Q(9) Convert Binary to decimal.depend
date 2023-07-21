@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1689198436 source:c:\users\mahmo\desktop\cooding c\q(9) convert binary to decimal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
